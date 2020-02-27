@@ -5,7 +5,7 @@ an application of Style Transfer on iOS
 * 10 default styles or customized style
 
 ## Demo
-{%youtube KYqbE8JfhjY %}
+[![](https://img.youtube.com/vi/KYqbE8JfhjY/0.jpg)](https://www.youtube.com/watch?v=KYqbE8JfhjY)
 
 ## Motivation
 What would happen if we combine two or even more images?
