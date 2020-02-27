@@ -1,0 +1,6 @@
+framework module Pods_iStyleTests {
+  umbrella header "Pods-iStyleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

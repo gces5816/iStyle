@@ -1,0 +1,6 @@
+framework module Pods_iStyleUITests {
+  umbrella header "Pods-iStyleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

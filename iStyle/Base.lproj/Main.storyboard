@@ -1,24 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController storyboardIdentifier="Main" id="BYZ-38-t0r" customClass="ViewController_Main" customModule="iStyle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Main" customClass="GradientView" customModule="iStyle" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1w7-bd-5hq" userLabel="Button_Camera">
+                                <rect key="frame" x="202" y="465" width="98" height="102"/>
+                                <state key="normal" image="Camera"/>
+                                <connections>
+                                    <action selector="CameraBtn_onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b8c-rM-wPG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tb9-KI-gEU" userLabel="Button_Library">
+                                <rect key="frame" x="75" y="465" width="98" height="102"/>
+                                <state key="normal" image="Library"/>
+                                <connections>
+                                    <action selector="LibraryBtn_onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IbY-R0-P4d"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="fj9-of-6ff">
+                                <rect key="frame" x="67" y="335" width="240" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="N2i-AV-TwF"/>
+                                    <constraint firstAttribute="width" constant="240" id="Qe4-Gt-mwS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main" translatesAutoresizingMaskIntoConstraints="NO" id="ULj-bn-RaA">
+                                <rect key="frame" x="67" y="152" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Cx6-08-xbP"/>
+                                    <constraint firstAttribute="height" constant="128" id="NVg-bo-0O6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ULj-bn-RaA" secondAttribute="trailing" constant="68" id="92o-nQ-kkL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1w7-bd-5hq" secondAttribute="trailing" constant="75" id="A2Z-BE-3Bj"/>
+                            <constraint firstItem="fj9-of-6ff" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="CLh-R4-RaT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fj9-of-6ff" secondAttribute="trailing" constant="68" id="Ioq-4c-lu5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1w7-bd-5hq" secondAttribute="bottom" constant="100" id="Iwd-2M-sWa"/>
+                            <constraint firstItem="fj9-of-6ff" firstAttribute="top" secondItem="ULj-bn-RaA" secondAttribute="bottom" constant="55" id="Xlu-Ux-9Nk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fj9-of-6ff" secondAttribute="bottom" constant="228" id="asF-fS-yvQ"/>
+                            <constraint firstItem="ULj-bn-RaA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="132" id="eyl-eQ-fs8"/>
+                            <constraint firstItem="ULj-bn-RaA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="olr-zi-nPx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tb9-KI-gEU" secondAttribute="bottom" constant="100" id="vUF-9V-HfP"/>
+                            <constraint firstItem="tb9-KI-gEU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="xQj-AE-Bh3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" red="0.90624386072158813" green="0.89078265428543091" blue="0.82022744417190552" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" red="0.82376796007156372" green="0.85495012998580933" blue="0.83348029851913452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
+                    <navigationItem key="navigationItem" id="hsa-Hr-Tm2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Camera" width="98" height="102"/>
+        <image name="Library" width="98" height="102"/>
+        <image name="Logo" width="604" height="235"/>
+        <image name="Main" width="512" height="512"/>
+    </resources>
 </document>
