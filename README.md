@@ -16,14 +16,15 @@ What would happen if we combine two or even more images?
 
 ## Techniques
 ### Johnson’s Model
-for 10 default pre-train models
+10 default pre-train models
 ![](https://i.imgur.com/iVZ8WfZ.png)
 
 ### AdaIN
-for customized style
+customized style
 ![](https://i.imgur.com/rmnLdis.png)
 
 ### Mask R-CNN
+selecting person/bacckground automatically
 ![](https://i.imgur.com/AnUgBPj.png)
 
 ![](https://i.imgur.com/O7VrVwA.png)
