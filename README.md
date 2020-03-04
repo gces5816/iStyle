@@ -6,6 +6,7 @@ an application of Style Transfer on iOS
 
 ## Demo Video
 Click to watch full demo video on Youtube!
+
 [![](https://img.youtube.com/vi/KYqbE8JfhjY/0.jpg)](https://www.youtube.com/watch?v=KYqbE8JfhjY)
 
 ## Motivation
